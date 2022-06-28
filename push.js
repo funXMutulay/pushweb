@@ -13,13 +13,11 @@ let vapIdKeys =  {
     );
 
 let sub ={endpoint:
-            "https://fcm.googleapis.com/fcm/send/eo6WvHzUkE8:APA91bH7akoE-3DEGmdLhnaXyEFVhLNa12IiaJ8JFU9u1c7tEv0NBv-sta99xsUR3Np_m2Xpsg5m2EUJH6YKEufl2Tqw9xbk3p9axXnvWwTpLFxsOtWnr6cxvcLNMXfukWm6oTuApn7c",
-          expirationTime:null,
-          keys:{
-            p256dh:
-            "BGKen4URVhVmtxb5gOx1EQgrr32Ga_aBuymBpEjIEb7WDo5maQyuLDoiWYmXabfzTRkasUpvJulvdEZQeg40AUw",
-            auth:"juo_27X9kRe4qLlNEw1-hA"
-                }
-          } ;
+  "https://fcm.googleapis.com/fcm/send/eo6WvHzUkE8:APA91bH7akoE-3DEGmdLhnaXyEFVhLNa12IiaJ8JFU9u1c7tEv0NBv-sta99xsUR3Np_m2Xpsg5m2EUJH6YKEufl2Tqw9xbk3p9axXnvWwTpLFxsOtWnr6cxvcLNMXfukWm6oTuApn7c",
+  expirationTime:null,
+  keys:{
+    p256dh:"BGKen4URVhVmtxb5gOx1EQgrr32Ga_aBuymBpEjIEb7WDo5maQyuLDoiWYmXabfzTRkasUpvJulvdEZQeg40AUw",
+    auth:"juo_27X9kRe4qLlNEw1-hA"}
+  } ;
 
   push.sendNotification(sub,'test message')
