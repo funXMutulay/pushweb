@@ -1,6 +1,6 @@
 self.addEventListener('push',function(e){
     var options = {
-        body: 'This notification was generated from a push ' ,
+        body: 'This notification shows what goes on ' ,
         icon: 'images/example.png' ,
         vibrate: [100, 50 , 100] ,
         data: {
@@ -18,6 +18,6 @@ self.addEventListener('push',function(e){
             {action:'close', title : 'Close', icon:'image/xmark.png'}
         ]
     };
-    e.waitUntil(self.registration.showNotification('Hello World',options));
+    e.waitUntil(self.registration.showNotification('Successfull run',options));
 
 });
